@@ -1,0 +1,215 @@
+/*---color veriable*/
+$primary: #1abc9c;
+$blue: #0d6efd;
+$indigo: #6610f2;
+$nav-bg: #2c3e50;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.3rem;
+}
+img {
+  max-width: 100%;
+}
+/*-----NAVBAR BG-COLOR---*/
+#navbar-example {
+  background: #2c3e50 !important;
+}
+/*--Nav_Font-size---*/
+.nav-link {
+  font-size: 16px !important;
+}
+/*--Nav_active-bg work--*/
+.nav-pills .nav-link.active {
+  color: var(--bs-nav-pills-link-active-color);
+  background-color: $primary !important;
+  padding: 10px !important;
+}
+.nav-pills .nav-link:hover {
+  color: $primary !important;
+}
+/*----Ofcanvas bg here---*/
+#offcanvasExample {
+  background: #2c3e50 !important;
+}
+/*==-----Portfulio_page design start----==*/
+#First_portfulio {
+  margin-top: 3rem;
+  background: $primary;
+  height: 90vh;
+  width: 100%;
+}
+#Start_btsp {
+  font-size: 3.8rem;
+}
+/*-----divider-first design here----*/
+.divider-line {
+  height: 4px;
+  width: 18%;
+  background-color: white;
+}
+#divider_line2 {
+  height: 4px;
+  width: 10%;
+  background-color: black;
+}
+/*--Portfulio text--*/
+#Portfulio_text {
+  font-size: 2.8rem;
+}
+/*----img added class----*/
+/*----img-1---*/
+#portfulio_item1 {
+  background-image: url("/img/cabin.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 18rem;
+  width: 100%;
+  color: transparent;
+}
+#portfulio_item1:hover {
+  background: #1abc9cb7;
+  color: White;
+}
+/*----img-1---*/
+#portfulio_item2 {
+  @extend #portfulio_item1;
+  background-image: url("/img/cake.png");
+}
+/*----img-1---*/
+#portfulio_item3 {
+  @extend #portfulio_item1;
+  background-image: url("/img/circus.png");
+}
+/*----img-1---*/
+#portfulio_item4 {
+  @extend #portfulio_item1;
+  background-image: url("/img/game.png");
+}
+/*----img-1---*/
+#portfulio_item5 {
+  @extend #portfulio_item1;
+  background-image: url("/img/safe.png");
+}
+/*----img-1---*/
+#portfulio_item6 {
+  @extend #portfulio_item1;
+  background-image: url("/img/submarine\ \(1\).png");
+}
+
+/*------About page design here-----*/
+#About_page {
+  background: $primary;
+  margin-top: 4rem;
+  width: 100%;
+  height: 80vh;
+}
+#divider_line3 {
+  @extend #divider_line2;
+  background-color: #fff;
+}
+
+#button_font:hover {
+  color: black !important;
+}
+/*-----Contact-form here---*/
+/*-----Contact-form here---*/
+#contact_text {
+  height: auto;
+  width: 100%;
+}
+#contact_us {
+  font-size: 3rem;
+}
+#divider_line4 {
+  height: 4px;
+  width: 50%;
+  background-color: black;
+}
+/*------Contact form design here----*/
+.form-floating {
+  position: relative;
+}
+.form-floating input.form-control,
+.form-floating textarea.form-control {
+  background: transparent;
+  font-size: 1.5rem;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-radius: 0;
+  border-width: 1.5px;
+}
+/*-----btn Submit design here---*/
+#Submit_btn {
+  background: $primary;
+  color: #f1f0f0f6;
+}
+/*-----Footer section design here------*/
+#footer_container {
+  background: #2c3e50;
+  height: 18rem;
+  width: 100%;
+}
+/*----Social-media btn here---*/
+#media_icon {
+  border-radius: 100% !important;
+  border-radius: 100%;
+  display: inline-flex;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid white;
+}
+/*----Footer_container1----*/
+#Footer_section1 {
+  height: 18rem;
+  background: #2c3e50;
+}
+/*----Footer section-2-----*/
+#footer_container2 {
+  background: black;
+  color: White;
+  overflow: hidden;
+  height: 3rem;
+}
+/*-----end_footer_txt----*/
+#end_footer_txt {
+  margin-top: 0.75rem;
+}
+
+/*----Start_btsp Responsive here-----*/
+/*----tab Responsive---*/
+@media screen and (max-width: 720px) {
+  #Start_btsp {
+    font-size: 3rem !important;
+  }
+}
+/*---Phone Responsive--*/
+@media screen and (max-width: 520px) {
+  #Start_btsp {
+    font-size: 2rem !important;
+  }
+}
+/*----Footer section Responsive work  here----*/
+@media screen and (max-width: 992px) {
+  #Footer_section1 {
+    height: 28rem !important;
+    background: #2c3e50;
+  }
+  #AROUND_text {
+    margin-top: 2rem;
+  }
+  #ABOUT_responsive {
+    margin-top: 2.5rem;
+  }
+}
